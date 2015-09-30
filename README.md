@@ -62,7 +62,7 @@ Looking for a theme? Lots of people love [Solarized](http://ethanschoonover.com/
 
 ## Browser Setup
 
-We use Chrome, Firefox, and Safari (you're probably looking at it) regularly for sanity-checking compatability.
+You'll need Chrome, Firefox, and Safari (you're probably looking at it) regularly for sanity-checking compatability.
 
 ```bash
 brew cask install google-chrome
@@ -80,8 +80,8 @@ We have a collection of Windows VMs to test the app in markets where legacy supp
 ## Communication
 We prize strong communication. Bookmark these links as you'll be referring to them often.
 
-[Tada @ Slack](https://tadaworks.slack.com): Team chat
-[Tada Dev @ Trello](https://trello.com/tadadev/): Sprint planning boards
+* [Tada @ Slack](https://tadaworks.slack.com): Team chat
+* [Tada Dev @ Trello](https://trello.com/tadadev/): Sprint planning boards
 
 ## Credential Management
 [Lastpass](https://lastpass.com) is used for securely sharing credentials, certificates, and other things too sensitive to pass around by email.
@@ -96,7 +96,7 @@ Us too, but LastPass lets us federate and log access, which beats passing around
 ## Editor and Plugins
 Yes, you can use your favorite editor.
 
-We use [Sublime](http://www.sublimetext.com/). This setup works with all of our stuff, so if you aren't super opinionated, give it a spin. Even if you are, you should probably follow along since your editor needs to support equivalent plugins.
+Our go-to is [Sublime Text](http://www.sublimetext.com/). This setup works with all of our stuff, so if you aren't super opinionated, give it a spin. Even if you are, you should probably follow along since your editor needs to support equivalent plugins.
 
 ```bash
 brew cask install caskroom/versions/sublime-text3
@@ -128,7 +128,7 @@ sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/
 You can also install themes like [Solarized](http://ethanschoonover.com/solarized) and [Dracula](https://github.com/zenorocha/dracula-theme#sublime-text) (along with thousands of others) in Package Control.
 
 ##Dev Environment
-We host our development environments in [VirtualBox](https://virtualbox.org) VMs, managed using [Vagrant](https://vagrantup.com). This helps us eliminate random per-machine config isues when bugs crop up, and improves reproducability.
+We host our development environments in [Vagrant](https://vagrantup.com)-managed [VirtualBox](https://virtualbox.org) VMs. This helps us eliminate per-machine config isues when bugs crop up, and improves reproducability.
 
 ```bash
 brew cask install virtualbox
@@ -140,14 +140,14 @@ It's under investigation, and will likely find its way into our stack if we deci
 ##Source Control
 We use [Git](https://git-scm.com) for source control, and [GitHub](https://github.com) as our host.
 
-If you don't already have one, [create a GitHub account](https://github.com/join) and then [follow this guide](https://help.github.com/articles/generating-ssh-keys) to generate an [SSH](https://en.wikipedia.org/wiki/Secure_Shell) key and test GitHub authentication.
+If you don't already have one, [create a GitHub account](https://github.com/join) and then [follow this guide](https://help.github.com/articles/generating-ssh-keys) to generate an [SSH](https://en.wikipedia.org/wiki/Secure_Shell) key pair and to test GitHub authentication.
 
 Get someone official looking to add you to the [Tada Works](https://github.com/tadaworks) organization so you can start pulling down code!
 
 ### New to Git?
-We've all been there. Here's an excellent tutorial](https://try.github.io/levels/1/challenges/1)
+We've all been there. [Here's an excellent tutorial](https://try.github.io/levels/1/challenges/1)
 
-[Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up) is another fantastic resource to help you think about how Git works, something most people who use it every day don't fully understand. We recommend this even to seasoned folk.
+[Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up) is another fantastic resource to help you understand how Git works, something most people who use it every day don't fully understand. We recommend this even to seasoned folk.
 
 ## Production Tools
 We currently deploy to a mix of [Firebase](https://firebase.com), [Heroku](https://heroku.com), and [AWS](https://aws.amazon.com) services. Credentials for each service are available in LastPass.
@@ -160,11 +160,11 @@ We currently deploy to a mix of [Firebase](https://firebase.com), [Heroku](https
 	```
 
 ### Getting Familiar
-[Babel Try Out](https://babeljs.io/repl): Babel is an [ES2015 (aka ES6)](https://github.com/lukehoban/es6features) to vanilla JavaScript transpiler, allowing us to write modern JavaScript code today.
-[Firebase Tutorial](https://www.firebase.com/tutorial/#gettingstarted): A 5-minute tutorial to get acquainted with Firebase and its features. It powers the real-time part of our stack.
-[Heroku Node Tutorial](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction): A quick getting started guide for building and launching Node.js apps on Heroku.
-[A Beginner's Guide to NPM](http://www.sitepoint.com/beginners-guide-node-package-manager): A quick overview of the [Node Package Manager]https://www.npmjs.com/
-[Webpack Tutorial](http://webpack.github.io/docs/tutorials/getting-started/): Gives an overview of the Webpack module bundler, a tool we use to package up our JavaScript code for the web.
+* [Babel Try Out](https://babeljs.io/repl): Babel is an [ES2015+ (aka ES6+)](https://github.com/lukehoban/es6features) to vanilla JavaScript transpiler, allowing us to write modern JavaScript code today.
+* [Firebase Tutorial](https://www.firebase.com/tutorial/#gettingstarted): A 5-minute tutorial to get acquainted with Firebase and its features. It powers the real-time part of our stack.
+* [Heroku Node Tutorial](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction): A quick getting started guide for building and launching Node.js apps on Heroku.
+* [A Beginner's Guide to NPM](http://www.sitepoint.com/beginners-guide-node-package-manager): A quick overview of the [Node Package Manager]https://www.npmjs.com/
+* [Webpack Tutorial](http://webpack.github.io/docs/tutorials/getting-started/): Gives an overview of the Webpack module bundler, a tool we use to package up our JavaScript code for the web.
 
 ## On the Way Out
 
