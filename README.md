@@ -8,8 +8,8 @@ This guide has one goal: **Check code into production by the end of the day.**
 * [Package Management](#package-management)
 * [Terminal Setup](#terminal-setup)
 * [Browser Setup](#browser-setup)
-* [Communication](#communication)
 * [Credential Management](#credential-management)
+* [Communication](#communication)
 * [Editor and Plugins](#editor-and-plugins)
 * [Dev Environment](#dev-environment)
 * [Source Control](#source-control)
@@ -83,8 +83,11 @@ We prize strong communication. Bookmark these links as you'll be referring to th
 * [Tada @ Slack](https://tadaworks.slack.com): Team chat
 * [Tada Dev @ Trello](https://trello.com/tadadev/): Sprint planning boards
 
+###Email and Calendar
+Our team uses [Office 365](https://products.office.com/en-us/business/office), which includes access to Word, Excel, PowerPoint, Outlook, and our OneNote archive. [Log in here](https://support.office.com/en-us/article/Download-and-install-Office-2016-for-Mac-using-Office-365-for-business-2eb5e0ad-eb5f-418c-a476-81be30e6fe4e) with the credentials stored in your LastPass account to start the installation process.
+
 ## Credential Management
-[Lastpass](https://lastpass.com) is used for securely sharing credentials, certificates, and other things too sensitive to pass around by email.
+[LastPass](https://lastpass.com) is used for securely sharing credentials, certificates, and other things too sensitive to pass around by email.
 
 You can [install Lastpass here](https://lastpass.com/download/cdn/lpmacosx.zip). This is extremely sensivite software, and the preferred install method is via this link.
 
@@ -152,18 +155,18 @@ We've all been there. [Here's an excellent tutorial](https://try.github.io/level
 ## Production Tools
 We currently deploy to a mix of [Firebase](https://firebase.com), [Heroku](https://heroku.com), and [AWS](https://aws.amazon.com) services. Credentials for each service are available in LastPass.
 
-	```bash
-	brew install heroku-toolbelt
-	brew install awscli
-	brew cask install java
-	brew cask install dynamodb-local
-	```
+```bash
+brew install heroku-toolbelt
+brew install awscli
+brew cask install java
+brew cask install dynamodb-local
+```
 
 ### Getting Familiar
 * [Babel Try Out](https://babeljs.io/repl): Babel is an [ES2015+ (aka ES6+)](https://github.com/lukehoban/es6features) to vanilla JavaScript transpiler, allowing us to write modern JavaScript code today.
 * [Firebase Tutorial](https://www.firebase.com/tutorial/#gettingstarted): A 5-minute tutorial to get acquainted with Firebase and its features. It powers the real-time part of our stack.
 * [Heroku Node Tutorial](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction): A quick getting started guide for building and launching Node.js apps on Heroku.
-* [A Beginner's Guide to NPM](http://www.sitepoint.com/beginners-guide-node-package-manager): A quick overview of the [Node Package Manager]https://www.npmjs.com/
+* [A Beginner's Guide to NPM](http://www.sitepoint.com/beginners-guide-node-package-manager): A quick overview of the [Node Package Manager](https://www.npmjs.com/)
 * [Webpack Tutorial](http://webpack.github.io/docs/tutorials/getting-started/): Gives an overview of the Webpack module bundler, a tool we use to package up our JavaScript code for the web.
 
 ## On the Way Out
