@@ -77,15 +77,6 @@ brew cask install firefox
 
 We have a collection of Windows VMs to test the app in markets where legacy support is a must. These installs are outside of the scope of this guide, so ask for help if you're working on a market-sensitive feature.
 
-## Communication
-We prize strong communication. Bookmark these links as you'll be referring to them often.
-
-* [Tada @ Slack](https://tadaworks.slack.com): Team chat
-* [Tada Dev @ Trello](https://trello.com/tadadev/): Sprint planning boards
-
-###Email and Calendar
-Our team uses [Office 365](https://products.office.com/en-us/business/office), which includes access to Word, Excel, PowerPoint, Outlook, and our OneNote archive. [Log in here](https://support.office.com/en-us/article/Download-and-install-Office-2016-for-Mac-using-Office-365-for-business-2eb5e0ad-eb5f-418c-a476-81be30e6fe4e) with the credentials stored in your LastPass account to start the installation process.
-
 ## Credential Management
 [LastPass](https://lastpass.com) is used for securely sharing credentials, certificates, and other things too sensitive to pass around by email.
 
@@ -95,6 +86,15 @@ If you feel really adamant about managing this install from Homebrew, just make 
 
 ### But I Love 1Password!
 Us too, but LastPass lets us federate and log access, which beats passing around a keystore. Your creds will arrive on edible paper shortly.
+
+## Communication
+We prize strong communication. Bookmark these links as you'll be referring to them often.
+
+* [Tada @ Slack](https://tadaworks.slack.com): Team chat
+* [Tada Dev @ Trello](https://trello.com/tadadev/): Sprint planning boards
+
+###Email and Calendar
+Our team uses [Office 365](https://products.office.com/en-us/business/office), which includes access to Word, Excel, PowerPoint, Outlook, and our OneNote archive. [Log in here](https://support.office.com/en-us/article/Download-and-install-Office-2016-for-Mac-using-Office-365-for-business-2eb5e0ad-eb5f-418c-a476-81be30e6fe4e) with the credentials stored in your LastPass account to start the installation process.
 
 ## Editor and Plugins
 Yes, you can use your favorite editor.
@@ -112,7 +112,6 @@ sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/
 ```
 
 ###Plugins
-
 [Install Package Control](https://packagecontrol.io/installation), which manages plugins within ST.
 
 `Cmd + shift + p` opens the Package Control prompt after installation. Search `install` and select `Package Control - Install Package` for each of the following:
@@ -127,6 +126,7 @@ sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/
 * [SublimeLinter-scss-lint](https://github.com/attenzione/SublimeLinter-scss-lint)
   * Run: `npm install -g sass-lint`
 * [Markdown Preview](https://github.com/revolunet/sublimetext-markdown-preview)
+* [ApplySyntax](https://github.com/facelessuser/ApplySyntax)
 
 You can also install themes like [Solarized](http://ethanschoonover.com/solarized) and [Dracula](https://github.com/zenorocha/dracula-theme#sublime-text) (along with thousands of others) in Package Control.
 
@@ -138,7 +138,7 @@ brew cask install virtualbox
 brew cask install vagrant
 ```
 ###Where's Otto?
-It's under investigation, and will likely find its way into our stack if we decide to migrate away from Heroku.
+It's under investigation, and will likely find its way into our stack after it's had some time to brew.
 
 ##Source Control
 We use [Git](https://git-scm.com) for source control, and [GitHub](https://github.com) as our host.
@@ -153,21 +153,18 @@ We've all been there. [Here's an excellent tutorial](https://try.github.io/level
 [Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up) is another fantastic resource to help you understand how Git works, something most people who use it every day don't fully understand. We recommend this even to seasoned folk.
 
 ## Production Tools
-We currently deploy to a mix of [Firebase](https://firebase.com), [Heroku](https://heroku.com), and [AWS](https://aws.amazon.com) services. Credentials for each service are available in LastPass.
+We currently deploy [Dockertized](https://docker.com) services to our [CoreOS](https://coreos.com) cluster, hosted in [AWS](https://aws.amazon.com). AWS credentials are available in LastPass.
 
 ```bash
-brew install heroku-toolbelt
 brew install awscli
-brew cask install java
-brew cask install dynamodb-local
 ```
 
 ### Getting Familiar
 * [Babel Try Out](https://babeljs.io/repl): Babel is an [ES2015+ (aka ES6+)](https://github.com/lukehoban/es6features) to vanilla JavaScript transpiler, allowing us to write modern JavaScript code today.
-* [Firebase Tutorial](https://www.firebase.com/tutorial/#gettingstarted): A 5-minute tutorial to get acquainted with Firebase and its features. It powers the real-time part of our stack.
-* [Heroku Node Tutorial](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction): A quick getting started guide for building and launching Node.js apps on Heroku.
 * [A Beginner's Guide to NPM](http://www.sitepoint.com/beginners-guide-node-package-manager): A quick overview of the [Node Package Manager](https://www.npmjs.com/)
 * [Webpack Tutorial](http://webpack.github.io/docs/tutorials/getting-started/): Gives an overview of the Webpack module bundler, a tool we use to package up our JavaScript code for the web.
+* [Vagrant](https://docs.vagrantup.com/v2/getting-started/): Vagrant is used to bootstrap our development environment. If you can type `vagrant up`, feel free to skip this one.
+* [Docker](https://coreos.com/os/docs/latest/getting-started-with-docker.html): An overview of running Docker containers on CoreOS. We use Vagrant to scaffold CoreOS on our local machines.
 
 ## On the Way Out
 
