@@ -71,7 +71,7 @@ brew cask install firefox
 
 ### Plugins
 * [React Developer Tools](https://github.com/facebook/react-devtools) | [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) | [Firefox](https://addons.mozilla.org/firefox/addon/react-devtools/): Makes developing [React](https://github.com/facebook/react) views easier.
-* [Postman](https://www.getpostman.com/) | [Chrome](https://chrome.google.com/webstore/detail/postman-rest-client/fhbjgbiflinjbdggehcddcbncdddomop): HTTP and REST client for testing APIs
+* [Advanced Rest Client](https://chromerestclient.appspot.com/) | [Chrome](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo): HTTP and REST client for testing APIs
 
 ### Wait, what about IE?
 
