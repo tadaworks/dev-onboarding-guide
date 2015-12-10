@@ -52,10 +52,10 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 Looking for `alt + ←` or `cmd + →`? Yeah, us too. [This thread on StackOverflow](http://stackoverflow.com/questions/6205157/iterm2-how-to-get-jump-to-beginning-end-of-line-in-bash-shell) provides a fix.
 
-Zsh has a ton of [plugins](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins) available for tab-based auto complete, which can be activated by adding entries to the `plugins` tuple in `~/.zshrc`. Here are a few that we use:
+Zsh has a ton of [plugins](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins) available for tab-based auto complete, which can be activated by adding entries to the `plugins` tuple in `~/.zshrc`. Here are a few that you might find useful:
 
 ```bash
-plugins=(git aws brew github heroku npm node osx vagrant)
+plugins=(git aws brew github npm node osx vagrant)
 ```
 
 Looking for a theme? Lots of people love [Solarized](http://ethanschoonover.com/solarized), and [Dracula](http://zenorocha.github.io/dracula-theme/iterm) is a favorite of ours. 
