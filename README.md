@@ -156,6 +156,7 @@ We've all been there. [Here's an excellent tutorial](https://try.github.io/level
 We currently deploy [Dockertized](https://docker.com) services to our [CoreOS](https://coreos.com) cluster, hosted in [AWS](https://aws.amazon.com). AWS credentials are available in LastPass.
 
 ```bash
+brew install fleetctl
 brew install awscli
 ```
 
