@@ -168,6 +168,6 @@ brew install awscli
 
 ## On the Way Out
 
-This is a pretty brief overivew, designed to get you up and running as quickly as possible. If you have any questions, ask them in team chat. A great one to start with: **"Hey, why are we using JavaScript?"**
+This is a pretty brief overivew, designed to get you up and running as quickly as possible. Each repository contains a `README.md` with basic usage instructions to get you started. If you have any questions, ask them in team chat. A great one to start with: **"Hey, why are we using JavaScript?"**
 
 
